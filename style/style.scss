@@ -18,28 +18,28 @@ body {
 }
 
 //---------------------------------
-// header class="nav__buttons"
+// header class="nav-buttons"
 // Main display  
-.nav__buttons {
-  &--wrap {
+.nav-buttons {
+  &__wrap {
     background-color: #fff;
   }
 
-  &--list {
+  &__list {
     display: flex;
     padding: 24px 16px 24px 16px;
     justify-content: space-between;
 
-    &--logo {
+    &-logo {
       align-items: center;
       display: flex;
       gap: 16px;
 
-      &--logo-item {
+      &-logo--icon {
         margin-right: 16px;
       }
 
-      &--logo-item::before {
+      &-logo--icon::before {
         content: "";
         display: inline-block;
         min-width: 2px;
@@ -52,7 +52,7 @@ body {
       }
     }
 
-    &--item {
+    &-item {
       min-width: 40px;
       min-height: 40px;
       background-color: #FF3E79;
@@ -61,39 +61,39 @@ body {
       cursor: pointer;
     }
 
-    &--desc {
+    &-desc {
       display: none;
     }
 
   }
 
-  &--list--btns {
+  &__list-btns {
     display: flex;
     align-items: center;
     gap: 16px;
   }
 
-  &--burger--btn {
+  &__burger-btn {
     background-image: url("../img/icon_nav_3_lines.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--phone--btn {
+  &__phone-btn {
     background-image: url("../img/icon_phone.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: none;
   }
 
-  &--message--btn {
+  &__message-btn {
     background-image: url("../img/icon_message.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: none;
   }
 
-  &--user--btn {
+  &__user-btn {
     background-image: url("../img/icon_user.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -101,19 +101,19 @@ body {
     margin-right: 16px;
   }
 
-  &--tools--btn {
+  &__tools-btn {
     background-image: url("../img/icon_tools.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--search--btn {
+  &__search-btn {
     background-image: url("../img/icon_search_oncheck.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--tools--btn::before {
+  &__tools-btn::before {
     content: "";
     display: block;
     width: 2px;
@@ -122,18 +122,17 @@ body {
     background-color: #EAEAEA;
     margin-left: -16px;
   }
-}
 
-//---------------------------------
-.nav__link--title--hidden {
-  display: none;
+  &__title--hidden {
+    display: none;
+  }
 }
 
 // --------------------------------
 //header class="nav__links"
 // Main display
-.nav__links {
-  &--wrap {
+.nav-links {
+  &__wrap {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -142,7 +141,7 @@ body {
     background-color: #F8F8F8;
   }
 
-  &--title {
+  &__title {
     font-size: 28px;
     line-height: 40px;
     font-weight: bold;
@@ -150,7 +149,7 @@ body {
     // justify-content: start;
   }
 
-  &--wrap::after {
+  &__wrap::after {
     content: "";
     display: inline-block;
     min-height: 40px;
@@ -161,18 +160,18 @@ body {
     position: absolute;
   }
 
-  &--main {
+  &__main {
     padding-left: 16px;
     overflow-x: scroll;
   }
 
-  &--main--list {
+  &__main-list {
     padding-top: 24px;
     list-style-type: none;
     display: flex;
   }
 
-  &--item {
+  &__item {
     font-size: 16px;
     line-height: 24px;
     color: #7E7E82;
@@ -185,19 +184,19 @@ body {
     cursor: pointer;
   }
 
-  &--item:hover {
+  &__item:hover {
     background-color: #fff;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
   }
 
-  &--item:focus {
+  &__item:focus {
     background-color: #fff;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
   }
 
-  &--item:active {
+  &__item:active {
     background-color: #fff;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
@@ -209,7 +208,7 @@ body {
 // class="feedback"
 //Main display
 .feedback {
-  &__main--title {
+  &__main-title {
     display: none;
   }
 
@@ -222,23 +221,23 @@ body {
     background-color: #F8F8F8;
   }
 
-  &__desc--text {
+  &__desc-text {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
     padding: 24px 16px 16px 16px;
 
-    &--part-2 {
+    &--added-part-2 {
       display: none;
     }
 
-    &--part-3 {
+    &--added-part-3 {
       display: none;
     }
   }
 
-  &__desc--text &__desc-text &__btn--wrap {
+  &__btn-wrap {
     display: flex;
     gap: 8px;
   }
@@ -250,7 +249,7 @@ body {
     background-color: #F8F8F8;
   }
 
-  &__text--btn {
+  &__btn-text {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -265,11 +264,11 @@ body {
     max-width: 766px;
   }
 
-  .nav__buttons {
-    &--list {
+  .nav-buttons {
+    &__list {
       justify-content: space-between;
 
-      &--logo-item::before {
+      &-logo--icon::before {
         content: "";
         display: inline-block;
         min-width: 2px;
@@ -281,9 +280,9 @@ body {
       }
     }
 
-    &--phone--btn,
-    &--message--btn,
-    &--user--btn {
+    &__phone-btn,
+    &__message-btn,
+    &__user-btn {
       display: inline-block;
     }
   }
@@ -294,17 +293,17 @@ body {
       background-position: 390px 32px;
       background-size: 360px 208px;
       padding: 32px 16px 25px 16px;
-
-      &--info {
-        max-width: 338px;
-        padding-right: 25px;
-      }
     }
 
-    &__desc--text {
+    &__info {
+      max-width: 338px;
+      padding-right: 25px;
+    }
+
+    &__desc-text {
       padding: 0;
 
-      &--part-2 {
+      &--added-part-2 {
         padding-top: 16px;
         padding-bottom: 10px;
         display: block;
@@ -321,16 +320,16 @@ body {
     max-width: 1118px;
   }
 
-  .nav__buttons {
-    &--wrap {
+  .nav-buttons {
+    &__wrap {
       background-color: #F8F8F8;
     }
 
-    &--list {
+    &__list {
       justify-content: space-between;
     }
 
-    &--list::after {
+    &__list::after {
       content: "";
       display: inline-block;
       min-height: 40px;
@@ -341,62 +340,59 @@ body {
       position: absolute;
     }
 
-    &--tools--btn::before {
+    &__tools-btn::before {
       display: none;
     }
 
-    &--list--desc {
+    &__list-desc {
       font-size: 16px;
       line-height: 24px;
       font-weight: 500;
       display: block;
     }
 
-    &--list--logo,
-    &--phone--btn,
-    &--message--btn,
-    &--user--btn {
+    &__list-logo,
+    &__phone-btn,
+    &__message-btn,
+    &__user-btn {
       display: none;
     }
+
+    &__title--hidden {
+      padding-left: 22px;
+      display: block;
+    }
+
   }
 
-  .nav__link--title--hidden {
-    display: block;
-  }
 
   //-----------------------------------------
-  .nav__links {
-    &--wrap {
+  .nav-links {
+    &__wrap {
       padding: 0;
     }
 
-    &--wrap::after {
+    &__wrap::after {
       display: none;
     }
 
-    &--title {
-      padding-left: 22px;
-    }
-
-    &--title--hidden {
+    &__title--hidden {
       display: none;
     }
 
-
-    &--main {
+    &__main {
       padding-left: 49px;
       overflow-x: hidden;
-
     }
 
-    &--main--list {
+    &__main-list {
       padding-top: 0px;
     }
   }
 
   //-----------------------------------------
   .feedback {
-    &__main--title {
+    &__main-title {
       background-color: #F8F8F8;
       padding: 14px 0px 0px 73px;
       font-weight: normal;
@@ -407,15 +403,15 @@ body {
       background-size: 532px 307px;
       background-position: 570px 16px;
       padding: 24px 16px 25px 16px;
-
-      &--info {
-        padding-left: 34px;
-        max-width: 490px;
-        max-height: 160px;
-      }
     }
 
-    &__desc--text--part-3 {
+    &__info {
+      padding-left: 34px;
+      max-width: 490px;
+      max-height: 160px;
+    }
+
+    &__desc--text--added-part-3 {
       display: contents;
     }
   }
