@@ -122,7 +122,7 @@ body {
   margin-left: -16px;
 }
 
-.nav__link--title--hidden[hidden] {
+.nav__link--title--hidden {
   display: none;
 }
 
@@ -298,7 +298,7 @@ body {
   .nav__buttons--list--logo, .nav__buttons--phone--btn, .nav__buttons--message--btn, .nav__buttons--user--btn {
     display: none;
   }
-  .nav__link--title--hidden[hidden] {
+  .nav__link--title--hidden {
     display: block;
   }
   .nav__links--wrap {
