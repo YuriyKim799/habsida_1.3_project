@@ -32,7 +32,7 @@ body {
 
 .wrap {
   margin: 0 auto;
-  max-width: 320px;
+  min-width: 320px;
 }
 
 .nav-buttons__wrap {
@@ -67,8 +67,25 @@ body {
   min-height: 40px;
   background-color: #FF3E79;
   border-radius: 50%;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
+  transition: all 0.4s;
+}
+.nav-buttons__list-item svg {
+  transition: all 0.4s;
+}
+.nav-buttons__list-item:hover {
+  box-shadow: 0px 0px 0px 3px rgba(240, 0, 127, 0.2);
+  background-color: #fff;
+  border: 1px solid #FF3E79;
+}
+.nav-buttons__list-item:focus {
+  box-shadow: 0px 0px 0px 3px rgba(240, 0, 127, 0.2);
+  background-color: #fff;
+  border: 1px solid #FF3E79;
+}
+.nav-buttons__list-item:active svg {
+  transform: scale(1.2);
 }
 .nav-buttons__list-desc {
   display: none;
@@ -78,48 +95,63 @@ body {
   align-items: center;
   gap: 16px;
 }
-.nav-buttons__burger-btn {
-  background-image: url("../img/icon_nav_3_lines.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.nav-buttons__burger-btn:hover svg {
+  fill: #FF3E79;
+}
+.nav-buttons__burger-btn:focus svg {
+  fill: #FF3E79;
 }
 .nav-buttons__phone-btn {
-  background-image: url("../img/icon_phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: #FF3E79;
   display: none;
+}
+.nav-buttons__phone-btn:hover svg {
+  fill: #FF3E79;
+}
+.nav-buttons__phone-btn:focus svg {
+  fill: #FF3E79;
 }
 .nav-buttons__message-btn {
-  background-image: url("../img/icon_message.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   display: none;
 }
+.nav-buttons__message-btn:hover svg {
+  fill: #FF3E79;
+}
+.nav-buttons__message-btn:focus svg {
+  fill: #FF3E79;
+}
 .nav-buttons__user-btn {
-  background-image: url("../img/icon_user.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   display: none;
   margin-right: 16px;
 }
-.nav-buttons__tools-btn {
-  background-image: url("../img/icon_tools.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.nav-buttons__user-btn:hover svg {
+  fill: #FF3E79;
 }
-.nav-buttons__search-btn {
-  background-image: url("../img/icon_search_oncheck.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.nav-buttons__user-btn:focus svg {
+  fill: #FF3E79;
+}
+.nav-buttons__tools-btn:hover svg {
+  fill: #FF3E79;
+}
+.nav-buttons__tools-btn:focus svg {
+  fill: #FF3E79;
+}
+.nav-buttons__search-btn:hover svg {
+  fill: #FF3E79;
+}
+.nav-buttons__search-btn:focus svg {
+  fill: #FF3E79;
 }
 .nav-buttons__tools-btn::before {
   content: "";
-  display: block;
+  display: inline-block;
   width: 2px;
   height: 32px;
   border-radius: 1px;
   background-color: #EAEAEA;
-  margin-left: -16px;
+  margin-left: -26px;
+  position: absolute;
+  margin-bottom: 3px;
 }
 .nav-buttons__title--hidden {
   display: none;
@@ -231,9 +263,6 @@ body {
   .wrap {
     max-width: 766px;
   }
-  .nav-buttons__list {
-    justify-content: space-between;
-  }
   .nav-buttons__list-logo--icon::before {
     content: "";
     display: inline-block;
@@ -245,7 +274,7 @@ body {
     margin-bottom: 9px;
   }
   .nav-buttons__phone-btn, .nav-buttons__message-btn, .nav-buttons__user-btn {
-    display: inline-block;
+    display: block;
   }
   .feedback__wrap {
     background-position: 390px 32px;
@@ -319,7 +348,7 @@ body {
   }
   .feedback__main-title {
     background-color: #F8F8F8;
-    padding: 14px 0px 0px 73px;
+    padding: 14px 0px 0px 69px;
     font-weight: normal;
     display: block;
   }
@@ -337,6 +366,14 @@ body {
     display: contents;
   }
 }
+.sidebar-body {
+  background-color: #fff;
+}
+
+.sidebar {
+  box-shadow: rgba(14, 24, 80, 0.2);
+}
+
 .nav-buttons__close-btn {
   background-image: url("../img/icon_close.svg");
   background-repeat: no-repeat;
@@ -409,9 +446,37 @@ body {
   font-weight: 700;
 }
 
-.siderbar-footer__lang-select--wrapper {
+.siderbar-footer__lang-select--list {
   padding-top: 40px;
   display: flex;
   gap: 7px;
   padding-bottom: 32px;
+  list-style-type: none;
+}
+
+.siderbar-footer__lang-select--list li {
+  transition: all 0.2s;
+}
+
+.siderbar-footer__lang-select--list li:hover {
+  color: #7E7E82;
+  cursor: pointer;
+}
+
+.info-list__item {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.info-list__item:hover::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  position: absolute;
+  margin-left: -25px;
+  border-radius: 50px;
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
