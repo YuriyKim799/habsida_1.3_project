@@ -96,6 +96,18 @@ body {
     align-items: center;
     // justify-content: center;
     gap: 16px;
+    position: relative;
+  }
+
+  &__list-btns::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background-color: #EAEAEA;
+    right: 111px;
+    position: absolute;
   }
 
   &__burger-btn:hover svg {
@@ -160,17 +172,7 @@ body {
     fill: $main-color;
   }
 
-  &__tools-btn::before {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 32px;
-    border-radius: 1px;
-    background-color: #EAEAEA;
-    margin-left: -26px;
-    position: absolute;
-    top: 38px;
-  }
+
 
   &__title--hidden {
     display: none;

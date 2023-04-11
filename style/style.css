@@ -95,6 +95,17 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  position: relative;
+}
+.nav-buttons__list-btns::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background-color: #EAEAEA;
+  right: 111px;
+  position: absolute;
 }
 .nav-buttons__burger-btn:hover svg {
   fill: #FF3E79;
@@ -142,17 +153,6 @@ body {
 }
 .nav-buttons__search-btn:focus svg {
   fill: #FF3E79;
-}
-.nav-buttons__tools-btn::before {
-  content: "";
-  display: inline-block;
-  width: 2px;
-  height: 32px;
-  border-radius: 1px;
-  background-color: #EAEAEA;
-  margin-left: -26px;
-  position: absolute;
-  top: 38px;
 }
 .nav-buttons__title--hidden {
   display: none;
