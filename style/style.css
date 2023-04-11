@@ -315,7 +315,7 @@ body {
     margin-left: -16px;
     position: absolute;
   }
-  .nav-buttons__tools-btn::before {
+  .nav-buttons__list-btns::before {
     display: none;
   }
   .nav-buttons__list-desc {
