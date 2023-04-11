@@ -65,6 +65,7 @@ body {
 .nav-buttons__list-item {
   min-width: 40px;
   min-height: 40px;
+  padding-top: 4px;
   background-color: #FF3E79;
   border-radius: 50%;
   border: 1px solid transparent;
@@ -149,9 +150,9 @@ body {
   height: 32px;
   border-radius: 1px;
   background-color: #EAEAEA;
-  margin-left: -26px;
+  margin-left: -32px;
   position: absolute;
-  margin-bottom: 3px;
+  top: 38px;
 }
 .nav-buttons__title--hidden {
   display: none;
@@ -365,118 +366,4 @@ body {
   .feedback__desc--text--added-part-3 {
     display: contents;
   }
-}
-.sidebar-body {
-  background-color: #fff;
-}
-
-.sidebar {
-  box-shadow: rgba(14, 24, 80, 0.2);
-}
-
-.nav-buttons__close-btn {
-  background-image: url("../img/icon_close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.nav-buttons__sidebar-search-btn {
-  background-image: url("../img/icon_sidebar_search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.sidebar-wrapper {
-  max-width: 320px;
-  background-color: #fff;
-}
-
-.sidebar-nav {
-  display: flex;
-  align-items: center;
-  gap: 77px;
-}
-
-.sidebar-nav_list {
-  display: flex;
-  align-items: center;
-  gap: 17px;
-  padding-top: 23px;
-  padding-left: 24px;
-}
-
-.nav-buttons__sidebar-search-btn {
-  margin-top: 23px;
-  margin-right: 24px;
-}
-
-.info-list {
-  padding-top: 50px;
-  padding-left: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  list-style-type: none;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.sidebar-footer {
-  padding-top: 286px;
-  padding-left: 24px;
-}
-
-.sidebar-footer__nav-buttons {
-  display: flex;
-  gap: 16px;
-}
-
-.sidebar-footer__nav-btn {
-  display: block;
-}
-
-.siderbar-footer__contacts-info--mail {
-  padding-top: 16px;
-  padding-bottom: 12px;
-}
-
-.siderbar-footer__contacts-info--phone {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
-}
-
-.siderbar-footer__lang-select--list {
-  padding-top: 40px;
-  display: flex;
-  gap: 7px;
-  padding-bottom: 32px;
-  list-style-type: none;
-}
-
-.siderbar-footer__lang-select--list li {
-  transition: all 0.2s;
-}
-
-.siderbar-footer__lang-select--list li:hover {
-  color: #7E7E82;
-  cursor: pointer;
-}
-
-.info-list__item {
-  display: flex;
-  cursor: pointer;
-  position: relative;
-}
-
-.info-list__item:hover::before {
-  content: "";
-  display: inline-block;
-  width: 4px;
-  height: 32px;
-  background-color: #41F6D7;
-  position: absolute;
-  margin-left: -25px;
-  border-radius: 50px;
-  align-self: center;
 }/*# sourceMappingURL=style.css.map */
